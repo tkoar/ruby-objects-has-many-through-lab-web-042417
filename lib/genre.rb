@@ -9,7 +9,7 @@ class Genre
 
   def add_song(song)
     self.songs << song
-    # song.genre = self
+    song.artist = self
   end
 
   def songs
@@ -21,3 +21,32 @@ class Genre
   end
 
 end
+
+
+
+
+
+
+# class Genre
+#
+#   attr_accessor :name
+#
+#   def initialize(name)
+#     @name = name
+#     @songs = []
+#   end
+#
+#   def add_song(song)
+#     self.songs << song
+#     # song.genre = self
+#   end
+#
+#   def songs
+#     @songs
+#   end
+#
+#   def artists
+#     self.songs.collect { |song| song.artist }
+#   end
+#
+# end
